@@ -1,0 +1,5 @@
+# robots.txt for ADVERTISING AGENCY Demonstration Website
+User-agent: *
+Allow: /
+
+Sitemap: https://demo-advertising-agency.com/sitemap.xml
