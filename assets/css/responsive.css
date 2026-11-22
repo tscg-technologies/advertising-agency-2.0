@@ -1,0 +1,267 @@
+/* ==========================================================================
+   ADVERTISING AGENCY — RESPONSIVE STYLESHEET
+   Breakpoints: 1920px, 1440px, 1024px, 768px, 390px, 360px
+   ========================================================================== */
+
+/* --- 1440px & ABOVE (Large Screens) --- */
+@media (min-width: 1441px) {
+  :root {
+    --container-max: 1440px;
+  }
+}
+
+/* --- 1200px - 1440px (Standard Desktop) --- */
+@media (max-width: 1440px) {
+  .hero-collage-grid {
+    grid-template-rows: repeat(12, 38px);
+  }
+}
+
+/* --- 1024px (Laptops & Small Desktops) --- */
+@media (max-width: 1024px) {
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pricing-grid {
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 580px;
+    margin: 0 auto;
+  }
+
+  .pricing-card.featured {
+    transform: none;
+  }
+
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px;
+  }
+
+  .services-dropdown {
+    width: 680px;
+    left: -200px;
+  }
+  
+  .hero-collage-grid {
+    grid-template-rows: repeat(12, 32px);
+  }
+
+  .dashboard-metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* --- 768px (Tablets & Large Mobiles) --- */
+@media (max-width: 768px) {
+  :root {
+    --header-height: 70px;
+  }
+
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .section-hero {
+    padding-top: calc(var(--header-height) + 30px);
+    padding-bottom: 50px;
+  }
+
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* Navigation Switch to Mobile */
+  .main-nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Hero Collage: Switch to 2-column or stacked flow */
+  .hero-collage-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .collage-item {
+    min-height: 220px;
+  }
+
+  .grid-2 {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .grid-3 {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .footer-bottom-bar {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .footer-bottom-links {
+    justify-content: center;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .checkbox-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .multistep-container {
+    padding: 24px 18px;
+  }
+
+  .step-title {
+    display: none;
+  }
+
+  .step-circle {
+    width: 32px;
+    height: 32px;
+    font-size: 0.78rem;
+  }
+
+  .dashboard-metrics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mockup-print-spread {
+    grid-template-columns: 1fr;
+  }
+
+  .mockup-print-spread::after {
+    display: none;
+  }
+
+  .serp-sitelinks {
+    grid-template-columns: 1fr;
+  }
+
+  .btn-group {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .brand-text span:first-child {
+    font-size: 0.88rem;
+  }
+
+  .brand-text span:last-child {
+    font-size: 0.65rem;
+  }
+}
+
+/* --- 390px & 360px (Standard & Small Smartphones) --- */
+@media (max-width: 480px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  h1 {
+    font-size: 2.1rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  .lead-text {
+    font-size: 1rem;
+  }
+
+  .card {
+    padding: 20px 16px;
+  }
+
+  .card-service-body {
+    padding: 20px 16px;
+  }
+
+  .portfolio-item-body {
+    padding: 18px 16px;
+  }
+
+  .mobile-drawer {
+    max-width: 100%;
+    padding: 80px 20px 30px;
+  }
+
+  .multistep-container {
+    padding: 20px 14px;
+  }
+
+  .toast-notification {
+    left: 16px;
+    right: 16px;
+    bottom: 20px;
+  }
+
+  .video-play-btn {
+    width: 56px;
+    height: 56px;
+  }
+  
+  .filter-btn {
+    font-size: 0.78rem;
+    padding: 6px 14px;
+  }
+
+  .step-buttons {
+    flex-direction: column-reverse;
+    gap: 12px;
+  }
+
+  .step-buttons .btn {
+    width: 100%;
+  }
+}
